@@ -1,122 +1,257 @@
-ol {
-  background: #ff9999;
-  padding: 20px;
+.wide-home {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
 }
 
-li {
-  background: #3399ff;
-  padding: 20px;
+.wide-home .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 1194px;
+  height: 834px;
+  position: relative;
 }
 
-ol li {
-  background: #ffe5e5;
-  color: darkred;
-  padding: 5px;
-  margin-left: 35px;
+.wide-home .navbutton-white {
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  top: 30px;
+  left: 1104px;
 }
 
-ul li {
-  background: #cce5ff;
-  color: darkblue;
-  margin: 5px;
+.wide-home .group {
+  position: relative;
+  height: 30px;
 }
-  
-  body {
-    font-family: Arial;
-    padding: 10px;
-    background: #f1f1f1;
-    box-sizing: border-box;
-  }
-  
-  /* Header/Blog Title */
-  .header {
-    padding: 30px;
-    text-align: center;
-    background: white;
-  }
-  
-  .header h1 {
-    font-size: 50px;
-  }
-  
-  /* Style the top navigation bar */
-  .topnav {
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  /* Style the topnav links */
-  .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change color on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Create two unequal columns that floats next to each other */
-  /* Left column */
-  .leftcolumn {   
-    float: left;
-    width: 75%;
-  }
-  
-  /* Right column */
-  .rightcolumn {
-    float: left;
-    width: 25%;
-    background-color: #f1f1f1;
-    padding-left: 20px;
-  }
-  
-  /* Fake image */
-  .fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
-  }
-  
-  /* Add a card effect for articles */
-  .card {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-  }
-  
-  /* Clear floats after the columns */
-  .row::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Footer */
-  .footer {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-    margin-top: 20px;
-  }
-  
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
-      width: 100%;
-      padding: 0;
-    }
-  }
-  
-  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-  @media screen and (max-width: 400px) {
-    .topnav a {
-      float: none;
-      width: 100%;
-    }
-  }
+
+.wide-home .line {
+  top: 0;
+  position: absolute;
+  width: 60px;
+  height: 1px;
+  left: 0;
+}
+
+.wide-home .img {
+  top: 15px;
+  position: absolute;
+  width: 60px;
+  height: 1px;
+  left: 0;
+}
+
+.wide-home .line-2 {
+  top: 30px;
+  position: absolute;
+  width: 60px;
+  height: 1px;
+  left: 0;
+}
+
+.wide-home .des-icon-grey {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  top: 30px;
+  left: 30px;
+  object-fit: cover;
+}
+
+.wide-home .text-wrapper {
+  position: absolute;
+  width: 284px;
+  height: 81px;
+  top: 31px;
+  left: 155px;
+  font-family: "Space Grotesk-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 118px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.wide-home .p {
+  position: absolute;
+  top: 119px;
+  left: 159px;
+  font-family: "Space Grotesk-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.wide-home .overlap {
+  position: absolute;
+  width: 978px;
+  height: 683px;
+  top: 329px;
+  left: 370px;
+}
+
+.wide-home .group-2 {
+  position: absolute;
+  width: 202px;
+  height: 232px;
+  top: 246px;
+  left: 0;
+}
+
+.wide-home .text-wrapper-2 {
+  position: absolute;
+  top: 212px;
+  left: 53px;
+  font-family: "Space Grotesk-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.wide-home .ellipse {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.wide-home .overlap-group {
+  position: absolute;
+  width: 851px;
+  height: 683px;
+  top: 0;
+  left: 127px;
+}
+
+.wide-home .overlap-2 {
+  position: absolute;
+  width: 723px;
+  height: 683px;
+  top: 0;
+  left: 128px;
+}
+
+.wide-home .text-wrapper-3 {
+  position: absolute;
+  top: 212px;
+  left: 57px;
+  font-family: "Space Grotesk-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.wide-home .overlap-group-wrapper {
+  position: absolute;
+  width: 523px;
+  height: 554px;
+  top: 129px;
+  left: 200px;
+}
+
+.wide-home .overlap-group-2 {
+  position: relative;
+  height: 554px;
+}
+
+.wide-home .ellipse-2 {
+  position: absolute;
+  width: 352px;
+  height: 352px;
+  top: 0;
+  left: 171px;
+  background-color: #e3813bcc;
+  border-radius: 176px;
+}
+
+.wide-home .ellipse-3 {
+  position: absolute;
+  width: 267px;
+  height: 267px;
+  top: 287px;
+  left: 204px;
+  background-color: #8d5e9fcc;
+  border-radius: 133.5px;
+}
+
+.wide-home .ellipse-4 {
+  position: absolute;
+  width: 267px;
+  height: 267px;
+  top: 236px;
+  left: 0;
+  background-color: #d06b77cc;
+  border-radius: 133.5px;
+}
+
+.wide-home .group-3 {
+  position: absolute;
+  width: 202px;
+  height: 232px;
+  top: 0;
+  left: 127px;
+}
+
+.wide-home .text-wrapper-4 {
+  position: absolute;
+  top: 212px;
+  left: 65px;
+  font-family: "Space Grotesk-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.wide-home .group-4 {
+  position: absolute;
+  width: 202px;
+  height: 232px;
+  top: 0;
+  left: 0;
+}
+
+.wide-home .text-wrapper-5 {
+  position: absolute;
+  top: 212px;
+  left: 42px;
+  font-family: "Space Grotesk-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.wide-home .FADX-is-the-faculty {
+  position: absolute;
+  width: 1135px;
+  top: 194px;
+  left: 29px;
+  font-family: "Space Grotesk-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.wide-home .group-5 {
+  position: absolute;
+  width: 202px;
+  height: 232px;
+  top: 329px;
+  left: 242px;
+}
