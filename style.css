@@ -21,13 +21,36 @@
   font-family: 'Space Grotesk', sans-serif;
 }
 
+.buttonBlue{
+  background-color: #3359b9;
+}
+
 .blueBG {
-  background-color: #3359B9
+  background: rgb(51,89,185);
+  background: radial-gradient(circle, rgba(51,89,185,1) 0%, rgba(41,71,148,1) 100%);
 }
 
 .purpleBG {
   background-color: #8D5E9F;
 }
+
+.ofscGreen {
+  background-color: #C7DBCC;
+}
+
+#buttonPurple{
+  background-color: #8D5E9F;
+  border: 2px solid #9b72ab;
+}
+
+#buttonPurple:hover{
+  background-color: #3359B9;
+  border: 2px solid #5879cc;
+  text-underline-offset: 0.25em;
+  text-decoration: underline;
+}
+
+
 
 .textPurple {
   color: #8D5E9F
@@ -122,34 +145,7 @@
 
 
 
-.wide-home {
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-}
 
-.wide-home .div {
-  background-color: #ffffff;
-
-  width: 1194px;
-  height: 834px;
-  position: relative;
-}
-
-.wide-home .navbutton-white {
-  position: absolute;
-  width: 60px;
-  height: 30px;
-  top: 30px;
-  left: 1104px;
-}
-
-.wide-home .group {
-  position: relative;
-  height: 30px;
-}
 
 .wide-home .line {
   top: 0;
@@ -333,9 +329,7 @@
 }
 
 .wide-home .text-wrapper-5 {
-  position: absolute;
-  top: 212px;
-  left: 42px;
+
 
   font-weight: 400;
   color: #000000;

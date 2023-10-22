@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/rem7pfm.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@4"></script>
+  </head>
+  <body>
+    <div class="wide-home">
+      <div class="div bg-white w-full h-full">
+
+        <!-- Navbar for Project Pages only -->
+        <nav 
+        class="pl-6 pt-3 flex flex-col w-full justify-between items-center">
+   
+
+          <div class="w-full flex align-top">
+
+              <img src="../img/logoBlue.png" alt="FADxL Logo" class="h-16" />
+            <a href="../index.html" class="ml-3 flex flex-col w-[19rem] hover:border-b-4 hover:border-solid hover:border-black">
+              <h1 class="text-4xl acuminProBold">FADx</h1>
+              <p class="text-lg acuminRegular">
+                Faculty of Arts and Design Exhibition
+              </p>
+            </a>
+
+
+            <button
+              id="menuBtn"
+              class="z-50 hamburger block absolute top-8 right-24 focus:outline-none"
+              type="button"
+              onclick="navToggle();"
+              aria-label="Show Menu"
+            >
+              <span
+                id="hamburgerTop"
+                class="hamburger__top-bun buttonBlue rounded-lg top-0 right-0"
+              ></span>
+              <span
+                id="hamburgerBottom"
+                class="hamburger__bottom-bun buttonBlue rounded-lg top-0 right-0"
+              ></span>
+            </button>
+          </div>
+
+          <div
+            id="menu"
+            class="w-[100vw] absolute flex flex-col top-0 left-0 hidden blueBG z-20 align-middle h-[100vh] "
+            >
+              <div class="w-full flex align-top">
+              <a href="../index.html" class="z-40 mt-10 ml-10 flex flex-col w-[19rem] text-white hover:border-b-4 hover:border-solid hover:border-white">
+                <h1 class="text-4xl acuminProBold">FADx</h1>
+                <p class="text-lg acuminRegular">
+                  Faculty of Arts and Design Exhibition
+                </p>
+              </a>
+            </div>
+            
+            <div
+              class="block z-40 my-6 text-center w-36 mx-auto pt-6 pb-3 border-white border-solid  hover:border-b-4"
+            >
+              <a
+                class="text-white spaceGrotesk uppercase text-3xl text-left w-full no-underline underline-offset-[1rem] py-12"
+                href="../jane.html"
+                ><span class=""> Jane <br /> </span>
+                <span class=" ">Phelps</span>
+              </a>
+            </div>
+
+            <div
+              class="z-40 block my-6 text-center w-44 mx-auto pt-6 pb-3 border-white border-solid  hover:border-b-4"
+            >
+              <a
+                class="text-white spaceGrotesk uppercase text-3xl text-left w-full no-underline underline-offset-[1rem] py-12"
+                href="../jarryd.html"
+                ><span class=""> Jarryd <br /> </span>
+                <span class=" ">Eastwood</span>
+              </a>
+            </div>
+
+            <div
+              class="block z-40 my-6 text-center w-24 mx-auto pt-6 pb-3 border-white border-solid  hover:border-b-4"
+            >
+              <a
+                class="text-white spaceGrotesk uppercase text-3xl text-left w-full no-underlineunderline-offset-[1rem]"
+                href="../kael.html"
+                ><span class="  "> Kael <br /> </span>
+                <span class="">Elby</span></a
+              >
+            </div>
+
+            <div
+              class="z-40 block my-6 text-center w-28 mx-auto pt-6 pb-3 border-white border-solid hover:border-b-4"
+            >
+              <a
+                class="text-white spaceGrotesk uppercase text-3xl text-left w-full no-underline underline-offset-[1rem] py-12"
+                href="../naomi.html"
+                ><span class=""> Naomi <br /> </span>
+                <span class="">Pham</span></a
+              >
+            </div>
+
+            <a href="../xinyi.html">
+              <div class="z-20 flex flex-col my-6 w-36 text-center w-28 mx-auto pt-6 pb-3 border-solid border-white border-solid hover:border-b-4"
+              >
+              <h3 class="text-white spaceGrotesk uppercase text-3xl text-center mb-1">
+                Xinyi
+              </h3>
+              <h3 class="text-white spaceGrotesk uppercase text-3xl text-center ">
+                Jiang
+              </h3>
+            </div>
+            </a>
+
+            <div class="absolute z-0 w-1/3 bottom-0 left-0">
+                <img
+                  src="../img/menububbles.png"
+                  class="z-10 w-full"
+                  alt="aesthetic only bubbles"
+                />
+            </div>
+
+          </div>
+        </nav>
+
+        <!-- Name is link to your personal page -->
+        <div class="ml-6 mt-3 w-48 hover:border-b-4 hover:border-solid hover:border-black">
+          <a href="../jarryd.html" >
+            <h1
+              class="uppercase text-grey-800 spaceGrotesk uppercase text-4xl text-left w-full no-underline"
+            >
+              Jarryd
+            </h1>
+            <h1
+              class="textPurple text-grey-800 spaceGrotesk uppercase text-4xl text-left w-full no-underline"
+            >
+              Eastwood
+            </h1>
+          </a>
+        </div>
+
+        <button
+        onclick="window.location.href='https://seasonallv22.netlify.app';"
+        id="buttonPurple"
+        type="button"
+        class="w-68 absolute right-[10vw] text-white spaceGrotesk uppercase font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
+        >
+        Interact with this project
+          <svg
+            class="w-3.5 h-3.5 ml-2"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 14 10"
+            >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 5h12m0 0L9 1m4 4L9 9"
+            />
+          </svg>
+        </button>
+   
+           <!-- New Responsive Style - Section 1 -->
+           <div
+            class="flex flex-col mt-12"
+           >
+           <div class="mx-auto w-[80vw]">
+            <h2
+              class="textPurple text-grey-800 spaceGrotesk uppercase text-3xl text-left w-full no-underline mb-2"
+              >
+                Seasonall
+              </h2>
+
+            <p class="text-base acuminRegular leading-snug text-left mb-2">
+              Everyone has their preferred weather for travelling, Seasonall can help you find your next travel destination! Built with HTML, TailwindCSS and JS.            </p>
+          </div>
+          <img class="mx-auto relative w-[80vw] object-contain" src="../img/jarryd/seasonall.png" />
+        </div>
+
+        <!-- New Responsive Style - Section 2 - Landing -->
+        <div
+        class="flex flex-col mt-12"
+        >
+        <div class="mx-auto w-[80vw]">
+          <h2
+            class="textPurple text-grey-800 spaceGrotesk uppercase text-3xl text-left w-full no-underline mb-2"
+            >
+            Marrakesh in Spring
+            </h2>
+        </div>
+        <img class="mx-auto relative w-[80vw] object-contain" src="../img/jarryd/marrakesh.png" />
+      </div>
+
+        <!-- New Responsive Style - Section 3 - Dashboard -->
+        <div
+        class="flex flex-col mt-12"
+        >
+        <div class="mx-auto w-[80vw]">
+          <h2
+            class="textPurple text-grey-800 spaceGrotesk uppercase text-3xl text-left w-full no-underline mb-2"
+            >
+            Tokyo in Winter
+            </h2>
+        </div>
+        <img class="mx-auto relative w-[80vw] object-contain" src="../img/jarryd/tokyo.png" />
+      </div>       
+        
+        <!-- New Responsive Style - Section 4 - Availability Calendar -->
+        <div
+        class="flex flex-col mt-12"
+        >
+        <div class="mx-auto w-[80vw]">
+          <h2
+            class="textPurple text-grey-800 spaceGrotesk uppercase text-3xl text-left w-full no-underline mb-2"
+            >
+            Ubud in Summer
+            </h2>
+        
+        <img class="mx-auto relative w-[80vw] object-contain" src="../img/jarryd/ubud.png" />
+      
+
+        <p class="py-12 acuminRegular text-lg">
+          Designed and built by the 2023 Interaction Design graduates
+        </p>
+
+        <button
+        onclick="window.location.href='https://seasonallv22.netlify.app';"
+        id="buttonPurple"
+        type="button"
+        class="w-68 fixed bottom-16 right-[10vw] text-white spaceGrotesk uppercase font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
+        >
+        Interact with this project
+          <svg
+            class="w-3.5 h-3.5 ml-2"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 14 10"
+            >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 5h12m0 0L9 1m4 4L9 9"
+            />
+          </svg>
+        </button>
+      </div>
+
+
+      
+
+
+      </div>
+    </div>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

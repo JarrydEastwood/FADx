@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="normalise.css" />
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://use.typekit.net/rem7pfm.css" />
@@ -16,21 +16,20 @@
   </head>
   <body>
     <div class="wide-home">
-      <div class="div">
-        <nav
-          class="flex flex-col w-full justify-between items-center px-6 py-3"
-        >
-          <div class="w-full flex align-top">
-            <a href="index.html" class="no-underline">
-              <img src="img/logoBlue.png" alt="FADxL Logo" class="h-16 mt-2" />
-            </a>
+      <div class="div bg-white w-full h-full">
 
-            <div class="flex flex-col">
-              <h1 class="ml-3 text-4xl acuminProBold">FADX</h1>
-              <p class="ml-3 text-lg acuminRegular">
+        <!-- Navbar for personal info pages - NOT PROJECT PAGES - THE NAV BAR IS THINNER ON THOSE -->
+        <nav 
+          class="pl-20 -pl-1 flex flex-col w-full justify-between items-center">
+          <div class="w-full flex align-top">
+              <img src="img/logoBlue.png" alt="FADxL Logo" class="h-16 mt-2" />
+
+             <a href="index.html" class="ml-3 flex flex-col flex flex-col w-[19rem] hover:border-b-4 hover:border-solid hover:border-black">
+              <h1 class="text-4xl acuminProBold">FADx</h1>
+              <p class="text-lg acuminRegular">
                 Faculty of Arts and Design Exhibition
               </p>
-            </div>
+            </a>
 
             <button
               id="menuBtn"
@@ -41,21 +40,29 @@
             >
               <span
                 id="hamburgerTop"
-                class="hamburger__top-bun blueBG rounded-lg top-0 right-0"
+                class="hamburger__top-bun buttonBlue rounded-lg top-0 right-0"
               ></span>
               <span
                 id="hamburgerBottom"
-                class="hamburger__bottom-bun blueBG rounded-lg top-0 right-0"
+                class="hamburger__bottom-bun buttonBlue rounded-lg top-0 right-0"
               ></span>
             </button>
           </div>
 
           <div
             id="menu"
-            class="w-full hidden blueBG z-20 flex-col items-center h-[100vh] pt-[10vh] absolute top-0"
-          >
+            class="w-[100vw] absolute flex flex-col top-0 left-0 hidden blueBG z-20 align-middle h-[100vh] "
+            >
+            <div class="w-full flex align-top">
+              <a href="../index.html" class="z-40 mt-10 ml-10 flex flex-col w-[19rem] text-white hover:border-b-4 hover:border-solid hover:border-white">
+                <h1 class="text-4xl acuminProBold">FADx</h1>
+                <p class="text-lg acuminRegular">
+                  Faculty of Arts and Design Exhibition
+                </p>
+              </a>
+            </div>
             <div
-              class="z-20 text-center w-32 mx-auto pt-6 pb-3 border-white hover:border-b-4"
+              class="block z-40 my-6 text-center w-36 mx-auto pt-6 pb-3 border-white border-solid  hover:border-b-4"
             >
               <a
                 class="text-white spaceGrotesk uppercase text-3xl text-left w-full no-underline underline-offset-[1rem] py-12"
@@ -66,7 +73,7 @@
             </div>
 
             <div
-              class="z-20 text-center w-44 mx-auto pt-6 pb-3 border-white hover:border-b-4"
+              class="z-40 block my-6 text-center w-44 mx-auto pt-6 pb-3 border-white border-solid  hover:border-b-4"
             >
               <a
                 class="text-white spaceGrotesk uppercase text-3xl text-left w-full no-underline underline-offset-[1rem] py-12"
@@ -77,7 +84,7 @@
             </div>
 
             <div
-              class="z-20 text-center w-24 mx-auto pt-6 pb-3 border-white hover:border-b-4"
+              class="block z-40 my-6 text-center w-24 mx-auto pt-6 pb-3 border-white border-solid  hover:border-b-4"
             >
               <a
                 class="text-white spaceGrotesk uppercase text-3xl text-left w-full no-underlineunderline-offset-[1rem]"
@@ -88,7 +95,7 @@
             </div>
 
             <div
-              class="z-20 text-center w-28 mx-auto pt-6 pb-3 border-white hover:border-b-4"
+              class="z-40 block my-6 text-center w-28 mx-auto pt-6 pb-3 border-white border-solid hover:border-b-4"
             >
               <a
                 class="text-white spaceGrotesk uppercase text-3xl text-left w-full no-underline underline-offset-[1rem] py-12"
@@ -98,187 +105,304 @@
               >
             </div>
 
-            <div
-              class="z-20 text-center w-28 mx-auto pt-6 pb-3 border-white hover:border-b-4"
-            >
-              <a
-                class="text-white spaceGrotesk uppercase text-3xl text-left w-full no-underline underline-offset-[1rem]"
-                href="xinyi.html"
-                ><span class=""> Xinyi <br /> </span>
-                <span class=" ">Jiang</span></a
+            <a href="xinyi.html">
+              <div class="z-20 flex flex-col my-6 w-36 text-center w-28 mx-auto pt-6 pb-3 border-solid border-white border-solid hover:border-b-4"
               >
+              <h3 class="text-white spaceGrotesk uppercase text-3xl text-center mb-1">
+                Xinyi
+              </h3>
+              <h3 class="text-white spaceGrotesk uppercase text-3xl text-center ">
+                Jiang
+              </h3>
+            </div>
+            </a>
+
+            <div class="absolute z-0 w-1/3 bottom-0 left-0">
+                <img
+                  src="img/menububbles.png"
+                  class="z-10 w-full"
+                  alt="aesthetic only bubbles"
+                />
             </div>
 
-            <div class="absolute z-10 bottom-0 left-0">
-              <img
-                src="img/menububbles.png"
-                class="w-full"
-                alt="aesthetic only bubbles"
-              />
-            </div>
           </div>
         </nav>
 
-        <!-- Headshot -->
-        <img
-          class="absolute w-96 h-96 top-28 left-24 object-cover"
-          src="img/xinyi.png"
-        />
+        <!-- Top Centred Content - Container -->
+        <div class="flex flex-row align-middle ml-20 mt-2">
+            <!-- Headshot -->
+            <img
+              class="rounded-full w-[30vw] h-[30vw] max-h-[45vh] max-w-[45vh] object-cover"
+              src="img/xinyi.png"
+            />
 
-        <!-- Top Right Content -->
-        <div class="absolute w-[40vw] top-28 right-24">
-          <h1
-            class="text-grey-800 spaceGrotesk uppercase text-6xl text-left w-full no-underline"
-          >
-            Xinyi
-          </h1>
-          <h1
-            class="textPurple text-grey-800 spaceGrotesk uppercase text-6xl text-left w-full no-underline mb-2"
-          >
-            Jiang
-          </h1>
+            <!-- Top Right Content -->
+            <div class="flex flex-col w-1/2 ml-[10vw] align-middle my-auto">
+              <h1
+                class="uppercase text-grey-800 spaceGrotesk uppercase text-6xl text-left w-full no-underline"
+              >
+                Xinyi
+              </h1>
+              <h1
+                class="textPurple text-grey-800 spaceGrotesk uppercase text-6xl text-left w-full no-underline mb-2"
+              >
+                Jiang
+              </h1>
 
-          <p class="text-base acuminRegular leading-snug text-left mb-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
+              <p class="text-base acuminRegular leading-snug text-left mb-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+              </p>
 
-          <h3 class="relative spaceGrotesk uppercase">SKILLS</h3>
-          <div class="w-80 flex items-center gap-[15px] mb-4">
-            <div class="div-wrapper-2">
-              <div
-                class="relative w-content -mt-px tracking-normal spaceGrotesk uppercase text-base text-black"
-              >
-                SKILL 1
+              <h3 class="text-lg mb-1 spaceGrotesk uppercase">SKILLS</h3>
+              <div class="w-80 flex items-center gap-[15px] mb-4">
+                <div class="div-wrapper-2">
+                  <div
+                    class="w-content -mt-px tracking-normal spaceGrotesk uppercase text-base text-black"
+                  >
+                    SKILL 1
+                  </div>
+                </div>
+                <div class="div-wrapper-2">
+                  <div
+                    class="relative w-content -mt-px tracking-normal spaceGrotesk uppercase text-base text-black"
+                  >
+                    SKILL 2
+                  </div>
+                </div>
+                <div class="div-wrapper-2">
+                  <div
+                    class="relative w-content -mt-px tracking-normal spaceGrotesk uppercase text-base text-black"
+                  >
+                    SKILL 3
+                  </div>
+                </div>
+                <div class="div-wrapper-2">
+                  <div
+                    class="relative w-content -mt-px tracking-normal spaceGrotesk uppercase text-base text-black"
+                  >
+                    SKILL 4
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="div-wrapper-2">
-              <div
-                class="relative w-content -mt-px tracking-normal spaceGrotesk uppercase text-base text-black"
-              >
-              SKILL 2
-              </div>
-            </div>
-            <div class="div-wrapper-2">
-              <div
-                class="relative w-content -mt-px tracking-normal spaceGrotesk uppercase text-base text-black"
-              >
-              SKILL 3
-              </div>
-            </div>
-            <div class="div-wrapper-2">
-              <div
-                class="relative w-content -mt-px tracking-normal spaceGrotesk uppercase text-base text-black"
-              >
-              SKILL 4
-              </div>
-            </div>
-          </div>
 
-          <h3 class="relative spaceGrotesk uppercase">INTERESTS</h3>
-          <div class="w-80 flex items-center gap-[15px] mb-4">
-            <div class="div-wrapper-2">
-              <div
-                class="relative w-content -mt-px tracking-normal spaceGrotesk uppercase text-base text-black"
-              >
-              INTEREST 1
+              <h3 class="text-lg mb-1 spaceGrotesk uppercase">INTERESTS</h3>
+              <div class="w-80 flex items-center gap-[15px]">
+                <div class="div-wrapper-2">
+                  <div
+                    class="relative w-content -mt-px tracking-normal spaceGrotesk uppercase text-base text-black"
+                  >
+                    INTEREST 1
+                  </div>
+                </div>
+                <div class="div-wrapper-2">
+                  <div
+                    class="relative w-content -mt-px tracking-normal spaceGrotesk uppercase text-base text-black"
+                  >
+                    INTEREST 2
+                  </div>
+                </div>
+                <div class="div-wrapper-2">
+                  <div
+                    class="relative w-content -mt-px tracking-normal spaceGrotesk uppercase text-base text-black"
+                  >
+                    INTEREST 3
+                  </div>
+                </div>
+                <div class="div-wrapper-2">
+                  <div
+                    class="relative w-content -mt-px tracking-normal spaceGrotesk uppercase text-base text-black"
+                  >
+                    INTEREST 4
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="div-wrapper-2">
-              <div
-                class="relative w-content -mt-px tracking-normal spaceGrotesk uppercase text-base text-black"
-              >
-              INTEREST 2
-              </div>
-            </div>
-            <div class="div-wrapper-2">
-              <div
-                class="relative w-content -mt-px tracking-normal spaceGrotesk uppercase text-base text-black"
-              >
-              INTEREST 3
-              </div>
-            </div>
-            <div class="div-wrapper-2">
-              <div
-                class="relative w-content -mt-px tracking-normal spaceGrotesk uppercase text-base text-black"
-              >
-                INTEREST 4
-              </div>
-            </div>
-          </div>
         </div>
-
+        
         <!-- Bottom Centred Content - Container -->
-        <div class="absolute w-[100vw] top-[50vh]">
-          <!-- Section 1 -->
-          <div class="relative ml-6 top-40">
-            <div class="relative">
-              <div class="relative spaceGrotesk uppercase textPurple text-5xl">
-                HEADING 1
+        <div class="block w-full">
+
+          <!-- New Responsive Style - Section 1 -->
+          <div
+          class="flex flex-col flex-nowrap w-[100vw] px-20 pt-6 mt-6"
+          >
+            <a
+              href="Xinyi/ofsc.html"
+              class="spaceGrotesk uppercase textPurple text-3xl lg:text-4xl mb-4 hover:underline hover:underline-offset-[1rem]"
+            >
+            Office of the Federal Safety Commissioner
+            </a>
+            <div class="flex flex-row align-middle pb-12">
+              <img
+                class="ofscGreen w-[60vw] rounded object-contain"
+                src="img/xinyi/ofsc.png"
+              />
+  
+              <!-- Shorter line due to shorter image -->
+              <div class="rounded-lg h-[30vw] w-1 purpleBG my-auto mx-auto"></div>
+  
+              <div class="flex w-1/4 flex-col">
+                <p class="mt-4 acuminRegular">
+                  Quam nulla porttitor massa id neque aliquam vestibulum. Duis at
+                  consectetur lorem donec massa sapien. Faucibus nisl tincidunt
+                  eget nullam non nisi. Odio ut sem nulla pharetra diam sit amet
+                  nisl. Nibh nisl condimentum id venenatis a condimentum vitae.
+                  Elit ullamcorper dignissim cras tincidunt lobortis feugiat
+                  vivamus at. Maecenas pharetra convallis.
+                </p>
+                <button
+                  id="buttonPurple"
+                  type="button"
+                  href="Xinyi/ofsc.html"
+                  class="mt-16 w-36 text-white spaceGrotesk uppercase font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
+                  >
+                  Read more
+                  <svg
+                    class="w-3.5 h-3.5 ml-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                    >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </button>
               </div>
-              <p class="mt-4 absolute acuminRegular right-24 w-1/4">
-                Quam nulla porttitor massa id neque aliquam vestibulum. Duis at
-                consectetur lorem donec massa sapien. Faucibus nisl tincidunt
-                eget nullam non nisi. Odio ut sem nulla pharetra diam sit amet
-                nisl. Nibh nisl condimentum id venenatis a condimentum vitae.
-                Elit ullamcorper dignissim cras tincidunt lobortis feugiat
-                vivamus at. Maecenas pharetra convallis.
-              </p>
-              <div
-                class="absolute left-[62.5vw] rounded-lg mt-4 h-96 my-auto algin-middle w-1 purpleBG mx-auto"
-              ></div>
             </div>
-            <img class="mt-4 w-[60vw] object-contain" src="img/seasonall.png" />
+  
+          
           </div>
 
-          <!-- Section 2 -->
-          <div class="relative ml-6 top-64">
-            <div class="relative">
-              <div class="relative spaceGrotesk uppercase textPurple text-5xl">
-                HEADING 2
+          <!-- New Responsive Style - Section 2 -->
+          <div
+          class="flex flex-col flex-nowrap w-[100vw] px-20 bg-gray-50 py-6"
+          >
+            <a
+              href="Xinyi/seasonall.html"
+              class="spaceGrotesk uppercase textPurple text-4xl mb-4 hover:underline hover:underline-offset-[1rem]"
+            >
+            Seasonall
+            </a>
+            <div class="flex flex-row align-middle pb-12">
+              <img
+                class="w-[60vw] rounded object-contain"
+                src="img/xinyi/seasonall.png"
+              />
+  
+              <!-- Taller/Normal line due to taller image -->
+              <div class="rounded-lg h-[35vw] w-1 purpleBG my-auto mx-auto"></div>
+  
+              <div class="flex w-1/4 flex-col">
+                <p class="mt-4 acuminRegular">
+                  Everyone has their preferred weather for travelling, Seasonall can help you find your next travel destination! Built with HTML, TailwindCSS and JS.
+                </p>
+                <p class="mt-4 acuminRegular">
+                  Quam nulla porttitor massa id neque aliquam vestibulum. Duis at
+                  consectetur lorem donec massa sapien. Faucibus nisl tincidunt
+                  eget nullam non nisi. Odio ut sem nulla pharetra diam sit amet
+                  nisl. Nibh nisl condimentum id venenatis a condimentum vitae.
+                  Elit ullamcorper dignissim cras tincidunt lobortis feugiat
+                  vivamus at. Maecenas pharetra convallis.
+                </p>
+                <button
+                  id="buttonPurple"
+                  type="button"
+                  href="Xinyi/seasonall.html"
+                  class="mt-16 w-36 text-white spaceGrotesk uppercase font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
+                  >
+                  Read more
+                  <svg
+                    class="w-3.5 h-3.5 ml-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                    >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </button>
               </div>
-              <p class="mt-4 absolute acuminRegular right-24 w-1/4">
-                Quam nulla porttitor massa id neque aliquam vestibulum. Duis at
-                consectetur lorem donec massa sapien. Faucibus nisl tincidunt
-                eget nullam non nisi. Odio ut sem nulla pharetra diam sit amet
-                nisl. Nibh nisl condimentum id venenatis a condimentum vitae.
-                Elit ullamcorper dignissim cras tincidunt lobortis feugiat
-                vivamus at. Maecenas pharetra convallis.
-              </p>
-              <div
-                class="absolute left-[62.5vw] rounded-lg mt-4 h-96 w-1 purpleBG mx-auto"
-              ></div>
             </div>
-            <img class="mt-4 w-[60vw] object-contain" src="img/reshape.png" />
+  
+          
           </div>
 
-          <!-- Section 3 & "footer"/signoff -->
-          <div class="relative ml-6 top-80">
-            <div class="relative">
-              <div class="relative spaceGrotesk uppercase textPurple text-5xl">
-                HEADING 3
+          <!-- New Responsive Style - Section 3 -->
+          <div
+          class="flex flex-col flex-nowrap w-[100vw] px-20 pt-6"
+          >
+            <a
+              href="Xinyi/sts.html"
+              class="spaceGrotesk uppercase textPurple text-4xl mb-4 hover:underline hover:underline-offset-[1rem]"
+            >
+            Sampling the Stars
+            </a>
+            <div class="flex flex-row align-middle pb-12">
+              <img
+                class="rounded w-[60vw] object-contain"
+                src="img/xinyi/sts.png"
+              />
+  
+              <!-- Taller/Normal line due to taller image -->
+              <div class="rounded-lg h-[35vw] w-1 purpleBG my-auto mx-auto"></div>
+  
+              <div class="flex w-1/4 flex-col">
+                <p class="mt-4 acuminRegular">
+                  Quam nulla porttitor massa id neque aliquam vestibulum. Duis at
+                  consectetur lorem donec massa sapien. Faucibus nisl tincidunt
+                  eget nullam non nisi. Odio ut sem nulla pharetra diam sit amet
+                  nisl. Nibh nisl condimentum id venenatis a condimentum vitae.
+                  Elit ullamcorper dignissim cras tincidunt lobortis feugiat
+                  vivamus at. Maecenas pharetra convallis.
+                </p>
+                <button
+                  id="buttonPurple"
+                  type="button"
+                  href="Xinyi/seasonall.html"
+                  class="mt-16 w-36 text-white spaceGrotesk uppercase font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
+                  >
+                  Read more
+                  <svg
+                    class="w-3.5 h-3.5 ml-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                    >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </button>
               </div>
-              <p class="mt-4 absolute acuminRegular right-24 w-1/4">
-                Quam nulla porttitor massa id neque aliquam vestibulum. Duis at
-                consectetur lorem donec massa sapien. Faucibus nisl tincidunt
-                eget nullam non nisi. Odio ut sem nulla pharetra diam sit amet
-                nisl. Nibh nisl condimentum id venenatis a condimentum vitae.
-                Elit ullamcorper dignissim cras tincidunt lobortis feugiat
-                vivamus at. Maecenas pharetra convallis.
-              </p>
-              <div
-                class="absolute left-[62.5vw] mt-4 rounded-lg h-96 w-1 purpleBG mx-auto"
-              ></div>
             </div>
-            <img class="mt-4 w-[60vw] object-contain" src="img/ofsc.png" />
+  
+          
+          </div>
 
-            <!-- Spacer -->
-            <div class="bottom-0 relative h-52 w-full bg-white"></div>
+         
 
             <!-- Signoff -->
-            <p class="pb-12 acuminRegular text-lg">
+            <p class="ml-20 py-12 acuminRegular text-lg">
               Designed and built by the 2023 Interaction Design graduates
             </p>
           </div>
