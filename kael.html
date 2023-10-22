@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="normalise.css" />
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://use.typekit.net/rem7pfm.css" />
@@ -17,9 +17,10 @@
   <body>
     <div class="wide-home">
       <div class="div">
-        <nav
-          class="flex flex-col w-full justify-between items-center px-6 py-3"
-        >
+        
+        <!-- Navbar for personal info pages - NOT PROJECT PAGES - THE NAV BAR IS THINNER ON THOSE -->
+        <nav 
+          class="pl-20 -pl-1 flex flex-col w-full justify-between items-center">
           <div class="w-full flex align-top">
             <a href="index.html" class="no-underline">
               <img src="img/logoBlue.png" alt="FADxL Logo" class="h-16 mt-2" />
@@ -41,21 +42,21 @@
             >
               <span
                 id="hamburgerTop"
-                class="hamburger__top-bun blueBG rounded-lg top-0 right-0"
+                class="hamburger__top-bun buttonBlue rounded-lg top-0 right-0"
               ></span>
               <span
                 id="hamburgerBottom"
-                class="hamburger__bottom-bun blueBG rounded-lg top-0 right-0"
+                class="hamburger__bottom-bun buttonBlue rounded-lg top-0 right-0"
               ></span>
             </button>
           </div>
 
           <div
             id="menu"
-            class="w-full hidden blueBG z-20 flex-col items-center h-[100vh] pt-[10vh] absolute top-0"
-          >
+            class="w-[100vw] absolute flex flex-col top-0 left-0 hidden blueBG z-20 align-middle h-[100vh] "
+            >
             <div
-              class="z-20 text-center w-32 mx-auto pt-6 pb-3 border-white hover:border-b-4"
+              class="block z-40 my-6 text-center w-36 mx-auto pt-6 pb-3 border-white border-solid  hover:border-b-4"
             >
               <a
                 class="text-white spaceGrotesk uppercase text-3xl text-left w-full no-underline underline-offset-[1rem] py-12"
@@ -66,7 +67,7 @@
             </div>
 
             <div
-              class="z-20 text-center w-44 mx-auto pt-6 pb-3 border-white hover:border-b-4"
+              class="z-40 block my-6 text-center w-44 mx-auto pt-6 pb-3 border-white border-solid  hover:border-b-4"
             >
               <a
                 class="text-white spaceGrotesk uppercase text-3xl text-left w-full no-underline underline-offset-[1rem] py-12"
@@ -77,7 +78,7 @@
             </div>
 
             <div
-              class="z-20 text-center w-24 mx-auto pt-6 pb-3 border-white hover:border-b-4"
+              class="block z-40 my-6 text-center w-24 mx-auto pt-6 pb-3 border-white border-solid  hover:border-b-4"
             >
               <a
                 class="text-white spaceGrotesk uppercase text-3xl text-left w-full no-underlineunderline-offset-[1rem]"
@@ -88,7 +89,7 @@
             </div>
 
             <div
-              class="z-20 text-center w-28 mx-auto pt-6 pb-3 border-white hover:border-b-4"
+              class="z-40 block my-6 text-center w-28 mx-auto pt-6 pb-3 border-white border-solid hover:border-b-4"
             >
               <a
                 class="text-white spaceGrotesk uppercase text-3xl text-left w-full no-underline underline-offset-[1rem] py-12"
@@ -98,30 +99,33 @@
               >
             </div>
 
-            <div
-              class="z-20 text-center w-28 mx-auto pt-6 pb-3 border-white hover:border-b-4"
-            >
-              <a
-                class="text-white spaceGrotesk uppercase text-3xl text-left w-full no-underline underline-offset-[1rem]"
-                href="xinyi.html"
-                ><span class=""> Xinyi <br /> </span>
-                <span class=" ">Jiang</span></a
+            <a href="xinyi.html">
+              <div class="z-20 flex flex-col my-6 w-36 text-center w-28 mx-auto pt-6 pb-3 border-solid border-white border-solid hover:border-b-4"
               >
+              <h3 class="text-white spaceGrotesk uppercase text-3xl text-center mb-1">
+                Xinyi
+              </h3>
+              <h3 class="text-white spaceGrotesk uppercase text-3xl text-center ">
+                Jiang
+              </h3>
+            </div>
+            </a>
+
+            <div class="absolute z-0 w-1/3 bottom-0 left-0">
+                <img
+                  src="img/menububbles.png"
+                  class="z-10 w-full"
+                  alt="aesthetic only bubbles"
+                />
             </div>
 
-            <div class="absolute z-10 bottom-0 left-0">
-              <img
-                src="img/menububbles.png"
-                class="w-full"
-                alt="aesthetic only bubbles"
-              />
-            </div>
           </div>
+
         </nav>
 
         <!-- Headshot -->
         <img
-          class="absolute w-96 h-96 top-28 left-24 object-cover"
+          class="rounded-full absolute w-96 h-96 top-28 left-12 object-cover"
           src="img/kael.png"
         />
 
