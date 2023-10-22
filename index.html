@@ -5,6 +5,9 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://use.typekit.net/rem7pfm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/popper.js@1"></script>
     <script src="https://unpkg.com/tippy.js@4"></script>
   </head>
@@ -14,7 +17,7 @@
       <div class="div">
           <!-- Making Nav bar permanent hamburger - Taken from below - sm:flex-row sm:px-6 sm:bg-transparent  -->
         <nav
-          class="flex flex-col w-full justify-between items-center px-12 py-6">
+          class="flex flex-col w-full justify-between items-center px-6 py-3">
 
         <!-- Making Nav bar permanent hamburger - Taken from below - sm:w-auto sm:self-center sm:flex-none  -->
         <div
@@ -33,39 +36,69 @@
         </div>
 
             <!-- Making Nav bar permanent hamburger - Taken from below - hidden sm:flex sm:flex-row sm:self-center sm:w-auto sm:py-0 sm:pb-0 -->
-        <div id="menu"
-        class="w-full hidden blueBG z-20 flex-col items-center h-[100vh] pt-[10vh] absolute top-0">
-        <!--Making Nav bar permanent hamburger - Taken from each of below -  sm:py-1 sm:w-auto -->
-        <a class="text-white font-bold text-2xl  border-solid border-white text-left w-full no-underline  underline-offset-[1rem] py-12 "
-        href="jane.html"><span class="ml-[40vw]"> Jane <br> </span> <span class="ml-[40vw] hover:decoration-4 hover:underline">Phelps</span></a>
-        <a class="text-white hover:font-bold text-2xl hover:decoration-4 text-left w-full no-underline hover:underline underline-offset-[1rem] py-12 "
-        href="jarryd.html">Jarryd Eastwood</a>
-        <a class="text-white hover:font-bold text-2xl hover:decoration-4 text-left w-full no-underline hover:underline underline-offset-[1rem] py-12 "
-        href="kael.html">Kael Elby</a>
-        <a class="text-white hover:font-bold text-2xl hover:decoration-4 text-left w-full no-underline hover:underline underline-offset-[1rem] py-12"
-        href="naomi.html">Naomi Pham</a>
-        <a class="text-white hover:font-bold text-2xl hover:decoration-4 text-left w-full no-underline hover:underline hover:underline-offset-[1rem] py-12"
-        href="xinyi.html">Xinyi Jiang</a>
-        <div class="rotate-180 mt-[40vh] mr-[30vw]">
-          <div class="w-2/3">
-            <div class="ellipse-2"></div>
-            <div class="ellipse-3"></div>
-            <div class="ellipse-4"></div>
-          </div>
-        </div>
-        </div>
-        </nav>
+        <div id="menu" class="w-full hidden blueBG z-20 flex-col items-center h-[100vh] pt-[10vh] absolute top-0">
        
+        <!--Making Nav bar permanent hamburger - Taken from each of below -  sm:py-1 sm:w-auto -->
+        <div class="z-20 text-center w-32 mx-auto pt-6 pb-3 border-white hover:border-b-4 ">
+        <a class="text-white spaceGrotesk text-3xl text-left w-full no-underline underline-offset-[1rem] py-12"
+        href="jane.html"><span class="  "> Jane <br> </span> 
+        <span class=" ">Phelps</span></a>
+      </div>
+
+      <div class="z-20 text-center w-44 mx-auto pt-6 pb-3 border-white hover:border-b-4 ">
+        <a class="text-white spaceGrotesk text-3xl text-left w-full no-underline underline-offset-[1rem] py-12 "
+        href="jarryd.html"><span class="  "> Jarryd <br> </span> 
+        <span class=" ">Eastwood</span></a>
+       </div>
+
+       <div class="z-20 text-center w-24 mx-auto pt-6 pb-3 border-white hover:border-b-4 ">
+        <a class="text-white spaceGrotesk text-3xl  text-left w-full no-underlineunderline-offset-[1rem]  "
+        href="kael.html"><span class="  "> Kael <br> </span> 
+        <span class="">Elby</span></a>
+       </div>
+
+       <div class="z-20 text-center w-28 mx-auto pt-6 pb-3 border-white hover:border-b-4 ">
+        <a class="text-white spaceGrotesk text-3xl text-left w-full no-underline underline-offset-[1rem] py-12 "
+        href="naomi.html"><span class=""> Naomi <br> </span> 
+        <span class="">Pham</span></a>
+       </div>
+
+       <div class="z-20 text-center w-28 mx-auto pt-6 pb-3 border-white hover:border-b-4 ">
+        <a class="text-white spaceGrotesk text-3xl text-left w-full no-underline underline-offset-[1rem] "
+        href="xinyi.html"><span class="  "> Xinyi <br> </span> 
+        <span class=" ">Jiang</span></a>
+      </div>
+
+        <div class="absolute z-10 bottom-0 left-0">
+          <img src="img/menububbles.png" class="w-full" alt="aesthetic only bubbles">
+        </div>
+
+      </div>
+    </nav>
+
+        <div class="textContainer w-[70vw] ml-[9.5rem] mt-3">
+          <p class="text-base acuminRegular leading-snug text-left mb-2">
+            FADX is the Faculty of Arts and Design’s annual graduate exhibition. It celebrates the achievements of our
+            graduating students and allows them to display their best work for family, friends, industry, and the
+            public.
+          </p>
+          <p class="text-base acuminRegular leading-snug text-left ">
+            Through FADX we encourage our students to reflect on their education and what they’ve
+            achieved throughout their degree, who they are as emerging professionals and how to effectively communicate
+            their accumulated knowledge and skills to prospective employers and industry contacts.
+          </p>
+        </div>
+
         <div class="overlap">
-          <a href="naomi.html" class="z-10 hover:brightness-50 group-2 px-12 py-12">
-            <div class="text-wrapper-2">Naomi Pham</div>
+          <a href="naomi.html" class="group z-10 hover:brightness-50 group-2 px-12 py-12">
+            <div class="spaceGrotesk group-hover:underline underline-offset-8 decoration-4 text-wrapper-2">Naomi Pham</div>
             <img class="ellipse" src="img/naomi.png" />
           </a>
 
           <div class="overlap-group">
             <div class="overlap-2">
-              <a href="xinyi.html" class="z-10 hover:brightness-50 group-2">
-                    <div class="text-wrapper-3" >Xinyi Jiang</div>
+              <a href="xinyi.html" class="group z-10 hover:brightness-50 group-2">
+                    <div class="spaceGrotesk group-hover:underline underline-offset-8 decoration-4 text-wrapper-3" >Xinyi Jiang</div>
                     <img class="ellipse" src="img/xinyi.png" />
               </a>
       
@@ -78,29 +111,23 @@
               </div>
 
               <a href="kael.html" class="z-10 group hover:brightness-50 group-3 px-12 py-12">
-                <div class=" group-hover:underline underline-offset-8 decoration-4 text-wrapper-4">Kael Elby</div>
+                <div class="spaceGrotesk group-hover:underline underline-offset-8 decoration-4 text-wrapper-4">Kael Elby</div>
                 <img class="ellipse" src="img/kael.png" />
               </a>
             </div>
 
-            <a href="jarryd.html" class="z-10 hover:brightness-50 group-4 px-12 py-12">
-              <div class="text-wrapper-5">Jarryd Eastwood</div>
+            <a href="jarryd.html" class="group z-10 hover:brightness-50 group-4 px-12 py-12">
+              <div class="spaceGrotesk group-hover:underline underline-offset-8 decoration-4 text-wrapper-5">Jarryd Eastwood</div>
               <img class="ellipse" src="img/jarryd.png" />
             </a>
-          </div>
+          </div> 
         </div>
-        <p class="FADX-is-the-faculty">
-          FADX is the Faculty of Arts and Design’s annual graduate exhibition. It celebrates the achievements of our
-          graduating students and allows them to display their best work for family, friends, industry, and the
-          public.<br /><br />Through FADX we encourage our students to reflect on their education and what they’ve
-          achieved throughout their degree, who they are as emerging professionals and how to effectively communicate
-          their accumulated knowledge and skills to prospective employers and industry contacts.
-        </p>
-
-        <div class="group-5">
-          <div class="text-wrapper-2">Jane Phelps</div>
-          <img class="ellipse" src="img/jane.png" />
-        </div>
+        
+        <a href="jane.html" class="group z-10 hover:brightness-50 group-5 px-12 py-12">
+          <div class="spaceGrotesk group-hover:underline underline-offset-8 decoration-4 text-wrapper-2">Jane Phelps</div>
+          <img class="ellipse " src="img/jane.png" />
+        </a>
+       
       </div>
     </div>
 
