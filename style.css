@@ -1,3 +1,80 @@
+*,
+*::before,
+*::after {
+  scroll-behavior: smooth;
+}
+
+
+.acuminRegular {
+  font-family: "acumin-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.acuminProBold {
+  font-family: "acumin-pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.spaceGrotesk{
+  font-family: "Space Grotesk-Regular", Helvetica;
+}
+
+.blueBG{
+  background-color: #3359B9
+}
+
+
+.hamburger {
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  
+  transition: all 0.25s;
+}
+
+.hamburger__top-bun,
+.hamburger__bottom-bun {
+  content: '';
+  position: absolute;
+  width: 3rem;
+  height: 4px;
+  transform: rotate(0);
+  transition: all 0.5s;
+  margin-top: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.hamburger__top-bun {
+  transform: translateY(-5px);
+}
+
+.hamburger__bottom-bun {
+  transform: translateY(3px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(-1px);
+}
+
+.open .hamburger__top-bun {
+  transform:
+    rotate(45deg)
+    translateY(0px);
+}
+
+.open .hamburger__bottom-bun {
+  transform:
+    rotate(-45deg)
+    translateY(0px);
+}
+
+*:hover {
+    transition: all 400ms ease;
+}
+
 .wide-home {
   background-color: #ffffff;
   display: flex;
@@ -60,26 +137,10 @@
   object-fit: cover;
 }
 
-.wide-home .text-wrapper {
-  position: absolute;
-  width: 284px;
-  height: 81px;
-  top: 31px;
-  left: 155px;
-  font-family: "Space Grotesk-Regular", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 118px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
 .wide-home .p {
   position: absolute;
   top: 119px;
   left: 159px;
-  font-family: "Space Grotesk-Regular", Helvetica;
   font-weight: 400;
   color: #000000;
   font-size: 16px;
@@ -107,7 +168,7 @@
   position: absolute;
   top: 212px;
   left: 53px;
-  font-family: "Space Grotesk-Regular", Helvetica;
+
   font-weight: 400;
   color: #000000;
   font-size: 16px;
@@ -144,7 +205,7 @@
   position: absolute;
   top: 212px;
   left: 57px;
-  font-family: "Space Grotesk-Regular", Helvetica;
+ 
   font-weight: 400;
   color: #000000;
   font-size: 16px;
@@ -207,7 +268,7 @@
   position: absolute;
   top: 212px;
   left: 65px;
-  font-family: "Space Grotesk-Regular", Helvetica;
+ 
   font-weight: 400;
   color: #000000;
   font-size: 16px;
@@ -227,7 +288,7 @@
   position: absolute;
   top: 212px;
   left: 42px;
-  font-family: "Space Grotesk-Regular", Helvetica;
+ 
   font-weight: 400;
   color: #000000;
   font-size: 16px;
@@ -240,7 +301,7 @@
   width: 1135px;
   top: 194px;
   left: 29px;
-  font-family: "Space Grotesk-Regular", Helvetica;
+ 
   font-weight: 400;
   color: #000000;
   font-size: 16px;
