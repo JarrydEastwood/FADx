@@ -1,33 +1,74 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="normalise.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/rem7pfm.css">
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@4"></script>
   </head>
   <body>
+   
     <div class="wide-home">
       <div class="div">
-        <div class="navbutton-white">
-          <div class="group">
-            <img class="line" src="img/line-4.svg" />
-            <img class="img" src="img/line-5.svg" />
-            <img class="line-2" src="img/line-6.svg" />
+          <!-- Making Nav bar permanent hamburger - Taken from below - sm:flex-row sm:px-6 sm:bg-transparent  -->
+        <nav
+          class="flex flex-col w-full justify-between items-center px-12 py-6">
+
+        <!-- Making Nav bar permanent hamburger - Taken from below - sm:w-auto sm:self-center sm:flex-none  -->
+        <div
+        class="w-full flex align-top">
+        <a href="index.html" class="no-underline"><img src="img/logoBlue.png" alt="FADxL Logo"
+        class="h-24 mt-2"></a>
+
+        <div class="flex flex-col">
+        <h1 class="ml-6 text-7xl acuminProBold">FADX</h1>
+        <p class="ml-7 text-xl acuminRegular">Faculty of Arts and Design Exhibition</p>
+        </div>
+        <!-- Making Nav bar permanent hamburger - Taken from below - sm:hidden -->
+        <button id="menuBtn" class="z-50 hamburger block  absolute top-12  right-24 focus:outline-none" type="button" onclick="navToggle();" aria-label="Show Menu">
+          <span id="hamburgerTop" class="hamburger__top-bun blueBG rounded-lg top-0 right-0 "></span> 
+          <span id="hamburgerBottom" class="hamburger__bottom-bun blueBG rounded-lg top-0  right-0 "></span></button>
+        </div>
+
+            <!-- Making Nav bar permanent hamburger - Taken from below - hidden sm:flex sm:flex-row sm:self-center sm:w-auto sm:py-0 sm:pb-0 -->
+        <div id="menu"
+        class="w-full hidden blueBG z-20 flex-col items-center h-[100vh] pt-[10vh] absolute top-0">
+        <!--Making Nav bar permanent hamburger - Taken from each of below -  sm:py-1 sm:w-auto -->
+        <a class="text-white font-bold text-2xl  border-solid border-white text-left w-full no-underline  underline-offset-[1rem] py-12 "
+        href="jane.html"><span class="ml-[40vw]"> Jane <br> </span> <span class="ml-[40vw] hover:decoration-4 hover:underline">Phelps</span></a>
+        <a class="text-white hover:font-bold text-2xl hover:decoration-4 text-left w-full no-underline hover:underline underline-offset-[1rem] py-12 "
+        href="jarryd.html">Jarryd Eastwood</a>
+        <a class="text-white hover:font-bold text-2xl hover:decoration-4 text-left w-full no-underline hover:underline underline-offset-[1rem] py-12 "
+        href="kael.html">Kael Elby</a>
+        <a class="text-white hover:font-bold text-2xl hover:decoration-4 text-left w-full no-underline hover:underline underline-offset-[1rem] py-12"
+        href="naomi.html">Naomi Pham</a>
+        <a class="text-white hover:font-bold text-2xl hover:decoration-4 text-left w-full no-underline hover:underline hover:underline-offset-[1rem] py-12"
+        href="xinyi.html">Xinyi Jiang</a>
+        <div class="rotate-180 mt-[40vh] mr-[30vw]">
+          <div class="w-2/3">
+            <div class="ellipse-2"></div>
+            <div class="ellipse-3"></div>
+            <div class="ellipse-4"></div>
           </div>
         </div>
-        <img class="des-icon-grey" src="img/des-icon-grey-1.png" />
-        <div class="text-wrapper">FADX</div>
-        <p class="p">Faculty of Arts and Design Exhibition</p>
+        </div>
+        </nav>
+       
         <div class="overlap">
-          <div class="group-2">
+          <a href="naomi.html" class="z-10 hover:brightness-50 group-2 px-12 py-12">
             <div class="text-wrapper-2">Naomi Pham</div>
-            <img class="ellipse" src="img/ellipse-4.png" />
-          </div>
+            <img class="ellipse" src="img/naomi.png" />
+          </a>
+
           <div class="overlap-group">
             <div class="overlap-2">
-              <div class="group-2">
-                <div class="text-wrapper-3">Xinyi Jiang</div>
-                <img class="ellipse" src="img/ellipse-5.png" />
-              </div>
+              <a href="xinyi.html" class="z-10 hover:brightness-50 group-2">
+                    <div class="text-wrapper-3" >Xinyi Jiang</div>
+                    <img class="ellipse" src="img/xinyi.png" />
+              </a>
+      
               <div class="overlap-group-wrapper">
                 <div class="overlap-group-2">
                   <div class="ellipse-2"></div>
@@ -35,15 +76,17 @@
                   <div class="ellipse-4"></div>
                 </div>
               </div>
-              <div class="group-3">
-                <div class="text-wrapper-4">Kael Elby</div>
-                <img class="ellipse" src="img/ellipse-3.png" />
-              </div>
+
+              <a href="kael.html" class="z-10 group hover:brightness-50 group-3 px-12 py-12">
+                <div class=" group-hover:underline underline-offset-8 decoration-4 text-wrapper-4">Kael Elby</div>
+                <img class="ellipse" src="img/kael.png" />
+              </a>
             </div>
-            <div class="group-4">
+
+            <a href="jarryd.html" class="z-10 hover:brightness-50 group-4 px-12 py-12">
               <div class="text-wrapper-5">Jarryd Eastwood</div>
-              <img class="ellipse" src="img/ellipse-2.png" />
-            </div>
+              <img class="ellipse" src="img/jarryd.png" />
+            </a>
           </div>
         </div>
         <p class="FADX-is-the-faculty">
@@ -53,11 +96,14 @@
           achieved throughout their degree, who they are as emerging professionals and how to effectively communicate
           their accumulated knowledge and skills to prospective employers and industry contacts.
         </p>
+
         <div class="group-5">
           <div class="text-wrapper-2">Jane Phelps</div>
-          <img class="ellipse" src="img/ellipse-1.png" />
+          <img class="ellipse" src="img/jane.png" />
         </div>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
