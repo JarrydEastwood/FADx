@@ -17,20 +17,27 @@
   font-style: normal;
 }
 
-.spaceGrotesk{
+.spaceGrotesk {
   font-family: 'Space Grotesk', sans-serif;
 }
 
-.blueBG{
+.blueBG {
   background-color: #3359B9
 }
 
+.purpleBG {
+  background-color: #8D5E9F;
+}
+
+.textPurple {
+  color: #8D5E9F
+}
 
 .hamburger {
   cursor: pointer;
   width: 3rem;
   height: 3rem;
-  
+
   transition: all 0.25s;
 }
 
@@ -55,25 +62,65 @@
 }
 
 .open {
-  transform: rotate(90deg);
+
   transform: translateY(-1px);
 }
 
 .open .hamburger__top-bun {
   transform:
-    rotate(45deg)
-    translateY(0px);
+    rotate(45deg) translateY(0px);
 }
 
 .open .hamburger__bottom-bun {
   transform:
-    rotate(-45deg)
-    translateY(0px);
+    rotate(-45deg) translateY(0px);
 }
 
 *:hover {
-    transition: all 400ms ease;
+  transition: all 400ms ease;
 }
+
+.TAGS-SKILLS {
+  width: 379px;
+  top: 175px;
+  left: -103px;
+  display: flex;
+  height: 30px;
+  align-items: center;
+  gap: 15px;
+  position: absolute;
+}
+
+.div-wrapper-2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 8px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #d9d9d9;
+  border-radius: 8px;
+}
+
+.TAGS-INTERESTS {
+  width: 342px;
+  top: 156px;
+  left: -156px;
+  display: flex;
+  height: 30px;
+  align-items: center;
+  gap: 15px;
+  position: absolute;
+}
+
+.overlap-wrapper {
+  width: 1135px;
+  height: 450px;
+  top: 937px;
+  left: 29px;
+}
+
+
 
 .wide-home {
   background-color: #ffffff;
@@ -85,7 +132,7 @@
 
 .wide-home .div {
   background-color: #ffffff;
-  overflow: hidden;
+
   width: 1194px;
   height: 834px;
   position: relative;
@@ -205,7 +252,7 @@
   position: absolute;
   top: 212px;
   left: 57px;
- 
+
   font-weight: 400;
   color: #000000;
   font-size: 16px;
@@ -268,7 +315,7 @@
   position: absolute;
   top: 212px;
   left: 65px;
- 
+
   font-weight: 400;
   color: #000000;
   font-size: 16px;
@@ -288,7 +335,7 @@
   position: absolute;
   top: 212px;
   left: 42px;
- 
+
   font-weight: 400;
   color: #000000;
   font-size: 16px;
@@ -301,7 +348,7 @@
   width: 1135px;
   top: 194px;
   left: 29px;
- 
+
   font-weight: 400;
   color: #000000;
   font-size: 16px;

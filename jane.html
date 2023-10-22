@@ -1,23 +1,290 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalise.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/rem7pfm.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@4"></script>
   </head>
   <body>
-    
-    <div class="header">
-        <h1>This is Jane's page</h1>
+    <div class="wide-home">
+      <div class="div">
+        <nav
+          class="flex flex-col w-full justify-between items-center px-6 py-3"
+        >
+          <div class="w-full flex align-top">
+            <a href="index.html" class="no-underline">
+              <img src="img/logoBlue.png" alt="FADxL Logo" class="h-16 mt-2" />
+            </a>
+
+            <div class="flex flex-col">
+              <h1 class="ml-3 text-4xl acuminProBold">FADX</h1>
+              <p class="ml-3 text-lg acuminRegular">
+                Faculty of Arts and Design Exhibition
+              </p>
+            </div>
+
+            <button
+              id="menuBtn"
+              class="z-50 hamburger block absolute top-8 right-24 focus:outline-none"
+              type="button"
+              onclick="navToggle();"
+              aria-label="Show Menu"
+            >
+              <span
+                id="hamburgerTop"
+                class="hamburger__top-bun blueBG rounded-lg top-0 right-0"
+              ></span>
+              <span
+                id="hamburgerBottom"
+                class="hamburger__bottom-bun blueBG rounded-lg top-0 right-0"
+              ></span>
+            </button>
+          </div>
+
+          <div
+            id="menu"
+            class="w-full hidden blueBG z-20 flex-col items-center h-[100vh] pt-[10vh] absolute top-0"
+          >
+            <div
+              class="z-20 text-center w-32 mx-auto pt-6 pb-3 border-white hover:border-b-4"
+            >
+              <a
+                class="text-white uppercase spaceGrotesk text-3xl text-left w-full no-underline underline-offset-[1rem] py-12"
+                href="jane.html"
+                ><span class=""> Jane <br /> </span>
+                <span class=" ">Phelps</span>
+              </a>
+            </div>
+
+            <div
+              class="z-20 text-center w-44 mx-auto pt-6 pb-3 border-white hover:border-b-4"
+            >
+              <a
+                class="text-white uppercase spaceGrotesk text-3xl text-left w-full no-underline underline-offset-[1rem] py-12"
+                href="jarryd.html"
+                ><span class=""> Jarryd <br /> </span>
+                <span class=" ">Eastwood</span>
+              </a>
+            </div>
+
+            <div
+              class="z-20 text-center w-24 mx-auto pt-6 pb-3 border-white hover:border-b-4"
+            >
+              <a
+                class="text-white uppercase spaceGrotesk text-3xl text-left w-full no-underlineunderline-offset-[1rem]"
+                href="kael.html"
+                ><span class="  "> Kael <br /> </span>
+                <span class="">Elby</span></a
+              >
+            </div>
+
+            <div
+              class="z-20 text-center w-28 mx-auto pt-6 pb-3 border-white hover:border-b-4"
+            >
+              <a
+                class="text-white uppercase spaceGrotesk text-3xl text-left w-full no-underline underline-offset-[1rem] py-12"
+                href="naomi.html"
+                ><span class=""> Naomi <br /> </span>
+                <span class="">Pham</span></a
+              >
+            </div>
+
+            <div
+              class="z-20 text-center w-28 mx-auto pt-6 pb-3 border-white hover:border-b-4"
+            >
+              <a
+                class="text-white uppercase spaceGrotesk text-3xl text-left w-full no-underline underline-offset-[1rem]"
+                href="xinyi.html"
+                ><span class=""> Xinyi <br /> </span>
+                <span class=" ">Jiang</span></a
+              >
+            </div>
+
+            <div class="absolute z-10 bottom-0 left-0">
+              <img
+                src="img/menububbles.png"
+                class="w-full"
+                alt="aesthetic only bubbles"
+              />
+            </div>
+          </div>
+        </nav>
+
+        <!-- Headshot -->
+        <img
+          class="absolute w-96 h-96 top-28 left-24 object-cover"
+          src="img/jane.png"
+        />
+
+        <!-- Top Right Content -->
+        <div class="absolute w-[40vw] top-28 right-24">
+          <h1
+            class="text-grey-800 uppercase spaceGrotesk text-6xl text-left w-full no-underline"
+          >
+            Jane
+          </h1>
+          <h1
+            class="textPurple text-grey-800 uppercase spaceGrotesk text-6xl text-left w-full no-underline mb-2"
+          >
+            Phelps
+          </h1>
+
+          <p class="text-base acuminRegular leading-snug text-left mb-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+
+          <h3 class="relative uppercase spaceGrotesk">SKILLS</h3>
+          <div class="w-80 flex items-center gap-[15px] mb-4">
+            <div class="div-wrapper-2">
+              <div
+                class="relative w-content -mt-px tracking-normal uppercase spaceGrotesk text-base text-black"
+              >
+                ILLUSTRATOR
+              </div>
+            </div>
+            <div class="div-wrapper-2">
+              <div
+                class="relative w-content -mt-px tracking-normal uppercase spaceGrotesk text-base text-black"
+              >
+                NEXTJS
+              </div>
+            </div>
+            <div class="div-wrapper-2">
+              <div
+                class="relative w-content -mt-px tracking-normal uppercase spaceGrotesk text-base text-black"
+              >
+                UI DESIGN
+              </div>
+            </div>
+            <div class="div-wrapper-2">
+              <div
+                class="relative w-content -mt-px tracking-normal uppercase spaceGrotesk text-base text-black"
+              >
+                FIGMA
+              </div>
+            </div>
+          </div>
+
+          <h3 class="relative uppercase spaceGrotesk">INTERESTS</h3>
+          <div class="w-80 flex items-center gap-[15px] mb-4">
+            <div class="div-wrapper-2">
+              <div
+                class="relative w-content -mt-px tracking-normal uppercase spaceGrotesk text-base text-black"
+              >
+                MOVIES
+              </div>
+            </div>
+            <div class="div-wrapper-2">
+              <div
+                class="relative w-content -mt-px tracking-normal uppercase spaceGrotesk text-base text-black"
+              >
+                BOOKS
+              </div>
+            </div>
+            <div class="div-wrapper-2">
+              <div
+                class="relative w-content -mt-px tracking-normal spaceGrotesk uppercase text-base text-black"
+              >
+                SPORT
+              </div>
+            </div>
+            <div class="div-wrapper-2">
+              <div
+                class="relative w-content -mt-px tracking-normal spaceGrotesk uppercase text-base text-black"
+              >
+                INTEREST4
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Centred Content - Container -->
+        <div class="absolute w-[100vw] top-[50vh]">
+          <!-- Section 1 -->
+          <div class="relative ml-6 top-40">
+            <div class="relative">
+              <div class="relative uppercase spaceGrotesk textPurple text-5xl">
+                HEADING 1
+              </div>
+              <p class="mt-4 absolute acuminRegular right-24 w-1/4">
+                Quam nulla porttitor massa id neque aliquam vestibulum. Duis at
+                consectetur lorem donec massa sapien. Faucibus nisl tincidunt
+                eget nullam non nisi. Odio ut sem nulla pharetra diam sit amet
+                nisl. Nibh nisl condimentum id venenatis a condimentum vitae.
+                Elit ullamcorper dignissim cras tincidunt lobortis feugiat
+                vivamus at. Maecenas pharetra convallis.
+              </p>
+              <div
+                class="absolute left-[62.5vw] rounded-lg mt-4 h-96 my-auto algin-middle w-1 purpleBG mx-auto"
+              ></div>
+            </div>
+            <img class="mt-4 w-[60vw] object-contain" src="img/seasonall.png" />
+          </div>
+
+          <!-- Section 2 -->
+          <div class="relative ml-6 top-64">
+            <div class="relative">
+              <div class="relative uppercase spaceGrotesk textPurple text-5xl">
+                HEADING 2
+              </div>
+              <p class="mt-4 absolute acuminRegular right-24 w-1/4">
+                Quam nulla porttitor massa id neque aliquam vestibulum. Duis at
+                consectetur lorem donec massa sapien. Faucibus nisl tincidunt
+                eget nullam non nisi. Odio ut sem nulla pharetra diam sit amet
+                nisl. Nibh nisl condimentum id venenatis a condimentum vitae.
+                Elit ullamcorper dignissim cras tincidunt lobortis feugiat
+                vivamus at. Maecenas pharetra convallis.
+              </p>
+              <div
+                class="absolute left-[62.5vw] rounded-lg mt-4 h-96 w-1 purpleBG mx-auto"
+              ></div>
+            </div>
+            <img class="mt-4 w-[60vw] object-contain" src="img/reshape.png" />
+          </div>
+
+          <!-- Section 3 & "footer"/signoff -->
+          <div class="relative ml-6 top-80">
+            <div class="relative">
+              <div class="relative spaceGrotesk uppercase textPurple text-5xl">
+                HEADING 3
+              </div>
+              <p class="mt-4 absolute acuminRegular right-24 w-1/4">
+                Quam nulla porttitor massa id neque aliquam vestibulum. Duis at
+                consectetur lorem donec massa sapien. Faucibus nisl tincidunt
+                eget nullam non nisi. Odio ut sem nulla pharetra diam sit amet
+                nisl. Nibh nisl condimentum id venenatis a condimentum vitae.
+                Elit ullamcorper dignissim cras tincidunt lobortis feugiat
+                vivamus at. Maecenas pharetra convallis.
+              </p>
+              <div
+                class="absolute left-[62.5vw] mt-4 rounded-lg h-96 w-1 purpleBG mx-auto"
+              ></div>
+            </div>
+            <img class="mt-4 w-[60vw] object-contain" src="img/ofsc.png" />
+
+            <!-- Spacer -->
+            <div class="bottom-0 relative h-52 w-full bg-white"></div>
+
+            <!-- Signoff -->
+            <p class="pb-12 acuminRegular text-lg">
+              Designed and built by the 2023 Interaction Design graduates
+            </p>
+          </div>
+        </div>
       </div>
-      
-      <div class="topnav">
-        <a href="bryn.html"> Bryn </a>
-        <a href="kael.html"> Kael </a>
-        <a href="jane.html"> Jane </a>
-        <a href="jarryd.html"> Jarryd </a>
-        <a href="naomi.html"> Naomi </a>
-        <a href="#" style="float:right">Link</a>
-      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
