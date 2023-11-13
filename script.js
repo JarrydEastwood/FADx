@@ -2,15 +2,16 @@
   function navToggle() {
     let btn = document.getElementById('menuBtn');
     let nav = document.getElementById('menu');
+    let content = document.getElementById('content');
     let top = document.getElementById('hamburgerTop');
     let bottom = document.getElementById('hamburgerBottom');
 
     btn.classList.toggle('open');
     nav.classList.toggle('flex');
     nav.classList.toggle('hidden');
+    content.classList.toggle('hidden');
     top.classList.toggle('bg-white');
     bottom.classList.toggle('bg-white');
- 
   }
 
   const template = document.getElementById('followTip');
