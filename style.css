@@ -239,16 +239,16 @@
 
 .wide-home .overlap-group {
   position: absolute;
-  width: 851px;
-  height: 683px;
+  width: 40vw;
+  height: 50vh;
   top: 0;
   left: 127px;
 }
 
 .wide-home .overlap-2 {
   position: absolute;
-  width: 723px;
-  height: 683px;
+  width: 20vw;
+  height: 60vh;
   top: 0;
   left: 128px;
 }
